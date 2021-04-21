@@ -1,0 +1,19 @@
+/* column */
+
+@import (reference) '~src/styles/global.less';
+
+.react-resizable {
+  position: relative;
+  background-clip: padding-box;
+}
+
+.resizable {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  bottom: 0;
+  right: -10px;
+  cursor: col-resize;
+  background: red;
+  z-index: 1;
+}

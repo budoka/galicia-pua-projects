@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "src/*": ["src/*"],
+      "@bff/logging": ["libs/logging/src"],
+      "@bff/logging/*": ["libs/logging/src/*"],
+      "@bff/filters": ["libs/filters/src"],
+      "@bff/filters/*": ["libs/filters/src/*"],
+      "@bff/tracing": ["libs/tracing/src"],
+      "@bff/tracing/*": ["libs/tracing/src/*"],
+      "@bff/response-parsers": ["libs/response-parsers/src"],
+      "@bff/response-parsers/*": ["libs/response-parsers/src/*"]
+    }
+  },
+  "include": ["src", "libs", "test"],
+  "exclude": ["node_modules", "dist"]
+}

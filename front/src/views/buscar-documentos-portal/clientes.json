@@ -1,0 +1,46 @@
+﻿[
+    {
+        "label": "CUIT",
+        "type": "number",
+        "wsField": "cuit"
+    },
+    {
+        "label": "CUIL",
+        "type": "number",
+        "wsField": "cuil"
+    },
+    {
+        "label": "DU",
+        "type": "number",
+        "wsField": "du"
+    },
+    {
+        "label": "CI",
+        "type": "number",
+        "wsField": "ci"
+    },
+    {
+        "label": "LE",
+        "type": "number",
+        "wsField": "le"
+    },
+    {
+        "label": "LC",
+        "type": "number",
+        "wsField": "lc"
+    },
+    {
+        "label": "Nombre y Apellido",
+        "type": "text",
+        "wsField": "nombre",
+        "label1": "Nombre",
+        "label2": "Apellido",
+        "type2": "text",
+        "wsField2": "apellido"
+    },
+    {
+        "label": "Razón Social",
+        "type": "text",
+        "wsField": "razonSocial"
+    }
+]

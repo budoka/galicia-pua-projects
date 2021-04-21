@@ -1,0 +1,84 @@
+/* wrapper */
+
+@import (reference) '~src/styles/global.less';
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+  //composes: wrapper from '~src/components/app/style.module.less';
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+
+  &.left {
+    justify-content: flex-start;
+  }
+  &.center {
+    justify-content: center;
+  }
+  &.right {
+    justify-content: flex-end;
+  }
+  &.top {
+    align-items: flex-start;
+  }
+  &.middle {
+    align-items: center;
+  }
+  &.bottom {
+    align-items: flex-end;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+
+  &.left {
+    align-items: flex-start;
+  }
+  &.center {
+    align-items: center;
+  }
+  &.right {
+    align-items: flex-end;
+  }
+  &.top {
+    justify-content: flex-start;
+  }
+  &.middle {
+    justify-content: center;
+  }
+  &.bottom {
+    justify-content: flex-end;
+  }
+}
+
+.scroll {
+  &-x {
+    &-auto {
+      overflow-x: auto;
+    }
+    &-show {
+      overflow-x: scroll;
+    }
+    &-hide {
+      overflow-x: hidden;
+    }
+  }
+  &-y {
+    &-auto {
+      overflow-y: auto;
+    }
+    &-show {
+      overflow-y: scroll;
+    }
+    &-hide {
+      overflow-y: hidden;
+    }
+  }
+}

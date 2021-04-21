@@ -1,0 +1,122 @@
+/* list card */
+
+@import (reference) '~src/styles/global.less';
+
+.wrapper {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  width: 100%;
+  //  background-color: blue;
+}
+
+.content {
+  background-color: @layout-header-background !important;
+
+  :global(.ant-card-head-title) {
+    padding: 16px !important;
+  }
+
+  > :global(.ant-card-body) {
+    width: 100%;
+    height: 100%;
+    //overflow-y: scroll;
+  }
+}
+
+.innerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+
+  :global(.ant-card-body) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .cardContent {
+    display: flex;
+    width: 100%;
+
+    .link {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .cardGrid {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 15px;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 8px 16px;
+
+      :global(.ant-spin) {
+        height: 20px;
+      }
+    }
+  }
+}
+
+// Light Theme
+.badgeIdleLight {
+  sup {
+    color: #000;
+    background-color: #d0d0d0;
+  }
+}
+
+.badgeLowLight {
+  sup {
+    color: #ffffff;
+    background-color: #1890ff;
+  }
+}
+
+.badgeNormalLight {
+  sup {
+    color: #ffffff;
+    background-color: #52c41a;
+  }
+}
+
+.badgeHighLight {
+  sup {
+    color: #ffffff;
+    background-color: #f5222d;
+  }
+}
+
+// Dark Theme
+.badgeIdleDark {
+  sup {
+    color: #262626;
+    background-color: #ffffff;
+  }
+}
+
+.badgeLowDark {
+  sup {
+    color: #ffffff;
+    background-color: #1890ff;
+  }
+}
+
+.badgeNormalDark {
+  sup {
+    color: #ffffff;
+    background-color: #52c41a;
+  }
+}
+
+.badgeHighDark {
+  sup {
+    color: #ffffff;
+    background-color: #f5222d;
+  }
+}

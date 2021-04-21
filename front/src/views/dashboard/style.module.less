@@ -1,0 +1,47 @@
+/* home */
+
+.wrapper {
+  // flex-wrap: wrap;
+}
+
+/* :global(.ant-row) {
+  &.landscape:nth-child(odd) {
+    margin-bottom: 8px;
+  }
+
+  &.landscape:nth-child(even) {
+    margin-top: 8px;
+  }
+} */
+
+.column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*   &.landscape:nth-child(odd) {
+    margin-right: 8px;
+  }
+
+  &.landscape:nth-child(even) {
+    margin-left: 8px;
+  } */
+}
+
+.card {
+  min-width: 250px;
+  max-width: 100%;
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+  margin: 8px 0 !important; //16px !important;
+
+  :global .ant-card-head {
+    text-align: left !important;
+  }
+}
+
+.header {
+  font-size: 22px;
+}

@@ -1,0 +1,137 @@
+/* cell */
+
+@import (reference) '~src/styles/global.less';
+
+.height(@value) {
+  min-height: @value !important;
+  max-height: @value !important;
+  height: @value !important;
+  line-height: @value !important;
+}
+
+.cell {
+  /* Editable Cell */
+  /* Height Cell */
+  :global .ant-form-item {
+    &,
+    :global .ant-form-item-control,
+    :global .ant-form-item-control-input,
+    :global .ant-form-item-control-input-content,
+    :global .ant-picker,
+    :global .ant-select,
+    :global .ant-select-selector,
+    :global .ant-select-selection-item,
+    input {
+      .height(22px);
+    }
+
+    /* Border and Text Align Cell */
+    :global .ant-form-item-control-input-content > input,
+    :global .ant-picker,
+    :global .ant-select-selector,
+    :global .ant-select-selection-search > input,
+    :global .ant-picker-input > input {
+      border-top: none !important;
+      border-right: none !important;
+      border-left: none !important;
+      border-radius: 0% !important;
+      background-color: transparent !important;
+      box-shadow: none !important;
+      text-align: center;
+    }
+
+    /* Text Input */
+    :global .ant-form-item-control-input-content > input {
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+    }
+
+    /* Select */
+    :global .ant-select-selection-search {
+      left: 50px !important;
+      right: 50px !important;
+      > input {
+        left: 18px !important;
+        padding-bottom: 1px !important;
+      }
+    }
+
+    /* Select Bottom Line Fix */
+    :global .ant-select {
+      bottom: -0.5px;
+    }
+
+    /* Select Selector Fix*/
+    :global .ant-select-selector {
+      padding-left: 14px !important;
+      padding-right: 14px !important;
+    }
+
+    /* Select Selected Item Fix*/
+    :global .ant-select-selection-item {
+      padding-left: 32px !important;
+      padding-right: 32px !important;
+    }
+
+    /* Select Arrow */
+    :global .ant-select-arrow {
+      right: 28px !important;
+    }
+
+    /* Date Picker */
+    :global .ant-picker {
+      width: 100%;
+      padding-left: 28px;
+      padding-right: 28px;
+
+      input {
+        position: absolute;
+        left: 0px !important;
+        right: 0px !important;
+        padding: 0 22px !important;
+      }
+
+      :global .ant-picker-suffix {
+        margin-left: auto;
+      }
+
+      :global .ant-picker-clear {
+        background-color: @table-selected-row-hover-bg !important;
+      }
+    }
+  }
+
+  /* Action cell */
+  &:global.ant-table-cell-fix-right {
+    &,
+    > span {
+      flex: 1;
+      padding: 0 !important;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  }
+
+  /* Fix Cell with ant-tag */
+  span:global.ant-tag {
+    vertical-align: top;
+  }
+
+  /* Hide alert (validation error message) */
+  :global .ant-form-item-explain {
+    div {
+      display: none;
+    }
+  }
+
+  //vertical-align: bottom;
+}
+
+/* Select Popup Option */
+.option {
+  :global .ant-select-item-option-content {
+    text-align: center !important;
+  }
+}

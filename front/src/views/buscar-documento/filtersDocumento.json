@@ -1,0 +1,970 @@
+[
+  { "label": "Número de Caja", "type": "number", "wsField": "idCaja" },
+  { "label": "Detalle", "type": "text", "wsField": "detalle" },
+  { "label": "DNI / Cuit cliente", "type": "number", "wsField": "dniCuitCliente" },
+  { "label": "Fecha generación", "type": "date", "wsField": "fechaGeneracion" },
+  { "label": "Fecha desde", "type": "date", "wsField": "fechaDesde" },
+  { "label": "Fecha documental", "type": "date", "wsField": "fechaDocumental" },
+  { "label": "Fecha hasta", "type": "date", "wsField": "fechaHasta" },
+  { "label": "Número de documento", "type": "number", "wsField": "id" },
+  { "label": "Nombre / Razon Social", "type": "text", "wsField": "nombreTitular" },
+  {
+    "label": "Suc/CC Origen",
+    "type": "list-search",
+    "wsField": "idSectorOrigen"  
+  },
+  {
+    "label": "Suc/CC Propietario",
+    "type": "list-search",
+    "wsField": "idSectorPropietario"
+  },
+  {
+    "label": "Tenencia Suc/CC",
+    "type": "list-search",
+    "wsField": "idSectorTenedor"
+  },
+  {
+    "label": "Estado",
+    "type": "list",
+    "wsField": "stateId"
+  },
+  {
+    "label": "Tipo de documento",
+    "type": "list-search",
+    "wsField": "idTipoDocumento",
+    "listValues": [
+      { "id": "0", "descripcion": "Nota Modelo" },
+      { "id": "1", "descripcion": "Legajo operativo" },
+      { "id": "2", "descripcion": "Cheques Pagadores" },
+      { "id": "3", "descripcion": "Cheques Rechazados" },
+      { "id": "4", "descripcion": "Cheques de Cámara Metro I y II Bco. Galicia" },
+      { "id": "5", "descripcion": "Cheques de Cámara Metro I y II Otros Bancos" },
+      { "id": "6", "descripcion": "Cheques Cámara Suc. Interior" },
+      { "id": "7", "descripcion": "Otros Cheques" },
+      { "id": "8", "descripcion": "Legajo Unificado" },
+      {
+        "id": "10",
+        "descripcion": "REMITO ELECTRONICO DE TRANSFERENCIA A ARCHIVO CENTRALIZADO"
+      },
+      {
+        "id": "20",
+        "descripcion": "FORM. DATOS CLIENTE (MAC) Y/O F4483/3 SOL. DE PRODUCTO Y/O F4768 SOL. DE PRESTAMO PERSONAL EN PESOS"
+      },
+      {
+        "id": "21",
+        "descripcion": "FORMULARIO VINCULACION DE CLIENTES A PRODUCTOS MINORISTAS"
+      },
+      { "id": "22", "descripcion": "CILI" },
+      {
+        "id": "25",
+        "descripcion": "FORMULARIO DATOS DEL CLIENTE (MAC) Y/O F4483/3 SOLICITUD DE PRODUCTO"
+      },
+      {
+        "id": "30",
+        "descripcion": "VERIFICACION DE DOMICILIO (DOCUMENTACION RESPALDATORIA)"
+      },
+      { "id": "40", "descripcion": "VERAZ" },
+      { "id": "60", "descripcion": "DNI" },
+      { "id": "61", "descripcion": "Cedula de Identidad" },
+      { "id": "70", "descripcion": "CONSTANCIA DE CUIL / CUIT" },
+      {
+        "id": "71",
+        "descripcion": "DOCUMENTACION RESPALDATORIA DE RIESGO CREDITICIO"
+      },
+      {
+        "id": "80",
+        "descripcion": "RECIBO DE SUELDO / RESUMEN AFJP / CERTIFICACION DE EMPLEO"
+      },
+      { "id": "90", "descripcion": "F 152/162/163/184 // COMROBANTE DE PAGOS" },
+      { "id": "100", "descripcion": "RECIBO DE HABERES JUBILATORIOS" },
+      { "id": "102", "descripcion": "LO" },
+      { "id": "110", "descripcion": "F1186 DESPACHO / CONSULTA APROBACION" },
+      { "id": "113", "descripcion": "CARPETA HIPOTECA SECURITIZABLE" },
+      { "id": "114", "descripcion": "Solicitudes Galicia Ahora" },
+      { "id": "117", "descripcion": "Carpeta de Prenda" },
+      { "id": "120", "descripcion": "FACTURA DE SEGUROS / PATENTE / PREPAGAS" },
+      { "id": "122", "descripcion": "CAJA WF" },
+      { "id": "130", "descripcion": "FORMULARIO INSCRIPCION AFIP" },
+      {
+        "id": "140",
+        "descripcion": "RESUMEN DE LIQUIDACION DE CUPONES DE TARJETAS"
+      },
+      { "id": "150", "descripcion": "TITULO UNIVERSITARIO O MATRICULA" },
+      { "id": "151", "descripcion": "TIPO DESCONOCIDO - 151" },
+      {
+        "id": "160",
+        "descripcion": "PAGO DE MATRICULA O APORTE PREVISIONAL - PROFESIONAL"
+      },
+      { "id": "170", "descripcion": "RESUMEN DE LIQUIDACION DE TC" },
+      {
+        "id": "180",
+        "descripcion": "FACTURA DE SEGURO / SERVICIO PUBLICO / TASAS / PATENTES / PREPAGA / EXPENSAS / CABLE / INTERNET"
+      },
+      { "id": "190", "descripcion": "F4483/3 SOLICITUD DE PRODUCTO" },
+      {
+        "id": "200",
+        "descripcion": "SOLICITUD DE TARJETA DE CREDITO PUNTO DE VENTA"
+      },
+      { "id": "210", "descripcion": "F4462/0 CONTRATO PREIMPRESO DE TC" },
+      { "id": "220", "descripcion": "F4460 CONDICIONES GENERALES (PREIMP)" },
+      { "id": "230", "descripcion": "F4510 CARGOS Y COMISIONES" },
+      {
+        "id": "231",
+        "descripcion": "5084/0 - COMISIONES VIGENTES - EMINENT CONVENIO HABERES"
+      },
+      {
+        "id": "232",
+        "descripcion": "5083/1 - COMISIONES VIGENTES - CLIENTES EMINENT"
+      },
+      {
+        "id": "240",
+        "descripcion": "F4768 SOLICITUD DE PRESTAMO PERSONAL EN PESOS"
+      },
+      {
+        "id": "250",
+        "descripcion": "F4555 DECLARACION JURADA DE PRESTAMOS PERSONALES"
+      },
+      { "id": "260", "descripcion": "REGISTRO DE FIRMAS" },
+      { "id": "270", "descripcion": "PAGARE" },
+      { "id": "280", "descripcion": "ANEXO CONTRATO TC" },
+      { "id": "290", "descripcion": "SEGURO PRESTAMOS PERSONALES PARA AUTOS" },
+      {
+        "id": "300",
+        "descripcion": "FACTURA DE COMPRA PRESTAMOS PERSONALES PARA AUTOS"
+      },
+      { "id": "310", "descripcion": "DDJJ PERSONA POLITICAMENTE EXPUESTA (PEP)" },
+      { "id": "320", "descripcion": "FOTOCOPIA DE CARNET/CREDENCIAL" },
+      { "id": "330", "descripcion": "ANEXO A LA SOLICITUD DE PAQUETE DE PRODUCTO" },
+      { "id": "340", "descripcion": "ALTA DE COMERCIO" },
+      {
+        "id": "341",
+        "descripcion": "LIQUIDACION DE EXPENSAS Y/O CARTA DE LA ADMINISTRACION"
+      },
+      { "id": "400", "descripcion": "FACTURA" },
+      {
+        "id": "401",
+        "descripcion": "DEBITO AUTOMATICO CUENTAS GALICIA CUOTA MENSUAL - (PAGO DIRECTO)"
+      },
+      {
+        "id": "402",
+        "descripcion": "MATRICULA ESCRIBANO O COMPROBANTE APORTES JUBILATORIOS A LA CAJA        NOTARIAL"
+      },
+      {
+        "id": "403",
+        "descripcion": "Padron actualizado de la camara o cuaota al dia de la habilitación   minicipal"
+      },
+      { "id": "404", "descripcion": "Factura de alquiler del puesto / local" },
+      {
+        "id": "405",
+        "descripcion": "CERTIFICADO DE INGRESOS EMITIDO POR EL MINISTERIO DE REL EXTERIORES,   COMERCIO Y CULTO"
+      },
+      {
+        "id": "406",
+        "descripcion": "LIQUIDACION DE COMERCIO DE TARJETA NARANJA EN CUENTA GALICIA"
+      },
+      { "id": "407", "descripcion": "CREDENCIAL DE DISTRIBUIDOR" },
+      { "id": "408", "descripcion": "CERTIFICADO DE INGRESOS" },
+      { "id": "409", "descripcion": "CARNET DE PROFESIONES Y TECNICOS" },
+      { "id": "410", "descripcion": "MATRICULA PROFESIONAL" },
+      { "id": "411", "descripcion": "BOLETO DE COMPRA Y VENTA" },
+      { "id": "412", "descripcion": "CREDENCIAL INGRESOS EMPLEADO" },
+      {
+        "id": "413",
+        "descripcion": "Adhesion comercio con acreditacion de tarjetas de credito"
+      },
+      { "id": "414", "descripcion": "ACREDITACION RELACION CON UNION COMERCIANTES" },
+      {
+        "id": "415",
+        "descripcion": "IMPRESIäN DE PARTICIPACIäN EN CAMPA#A DE REFERENCIA"
+      },
+      {
+        "id": "416",
+        "descripcion": "RESOLUCION DE DESIGNACION DEL REGISTRO O PADRON DE LOS TITULARES DE LOS REGISTROS DEL AUTOMOTOR"
+      },
+      { "id": "417", "descripcion": "PADRON ACTUALIZADO DE COLEGIO DE ABOGADOS" },
+      { "id": "418", "descripcion": "CAJA DE AHORRO EN DOLARES - F4854" },
+      { "id": "419", "descripcion": "COMPROBANTE PAGO DE CUOTA CLUB" },
+      {
+        "id": "420",
+        "descripcion": "CREDENCIAL DE ALUMNO O CERTIFICADO EMITIDO POR LA UNIVERSIDAD"
+      },
+      { "id": "421", "descripcion": "FORMULARIO DATOS DEL CLIENTE (MAC)" },
+      { "id": "422", "descripcion": "DDJJ Origen y Licitud de Fondos" },
+      { "id": "423", "descripcion": "SOLICITUD DE PRESTAMO - PERSONAS JURIDICAS" },
+      { "id": "424", "descripcion": "PAGARE EN DOLARES" },
+      { "id": "425", "descripcion": "PAGARE EN PESOS" },
+      { "id": "426", "descripcion": "DESPACHO MANUAL" },
+      { "id": "427", "descripcion": "CARTA EXENCION DE SELLOS" },
+      { "id": "428", "descripcion": "TIPO 428" },
+      { "id": "429", "descripcion": "RECIBO DE SUELDO O INFORME FILTRAR" },
+      { "id": "503", "descripcion": "DOC CAJAHO" },
+      { "id": "504", "descripcion": "DOC BANELCO NNNNNMMMM" },
+      { "id": "505", "descripcion": "DOC AMEX MMMMMMMMMMMMMMMMMMM" },
+      { "id": "506", "descripcion": "DOC CTACTE MMMMMMMMM" },
+      { "id": "507", "descripcion": "DOC MASTER MMMMMMMMM" },
+      { "id": "509", "descripcion": "DOC PRESPER MMMMMMMMMMMMMMMM" },
+      { "id": "510", "descripcion": "DOC 10107 AMEX MMMMM" },
+      { "id": "511", "descripcion": "DOC HATOTAL MMMM" },
+      { "id": "512", "descripcion": "DOC ORIGEN SUC MMMM" },
+      { "id": "513", "descripcion": "DOC PAUTA BUREAU MMMM" },
+      { "id": "601", "descripcion": "5078-4 Quiero! Términos y condiciones" },
+      { "id": "602", "descripcion": "Solicitud Galicia Débito Empresa" },
+      { "id": "610", "descripcion": "DDJJ Ganancias" },
+      { "id": "611", "descripcion": "DDJJ Bienes Personales" },
+      {
+        "id": "612",
+        "descripcion": "Certificación Ingresos por Cdor. Certificado CP"
+      },
+      { "id": "613", "descripcion": "Recibo de Sueldo" },
+      { "id": "614", "descripcion": "Inscripción Monotributo" },
+      { "id": "615", "descripcion": "Constancia Pago Monotributo" },
+      {
+        "id": "616",
+        "descripcion": "Estados Contables (Balance: Auditado y Certificado)"
+      },
+      { "id": "617", "descripcion": "Formulario 731 - IVA" },
+      {
+        "id": "618",
+        "descripcion": "Acta Conciliatoria para arreglos extrajudiciales"
+      },
+      { "id": "619", "descripcion": "Estatuto" },
+      { "id": "620", "descripcion": "Composición Accionaria" },
+      { "id": "621", "descripcion": "Constancia Cambio Categoría" },
+      { "id": "622", "descripcion": "Modificación Estatuto" },
+      { "id": "623", "descripcion": "Acta Asamblea (designación de cargos)" },
+      { "id": "624", "descripcion": "Acta de Directorio (Aumento de Capital)" },
+      {
+        "id": "625",
+        "descripcion": "Acta de Distribución de dividendos/utilidades"
+      },
+      { "id": "626", "descripcion": "Cobro de Siniestro" },
+      { "id": "627", "descripcion": "Contrato de Mutuo" },
+      { "id": "628", "descripcion": "Contrato de Servicios" },
+      { "id": "629", "descripcion": "DDJJ Ingresos Brutos" },
+      { "id": "630", "descripcion": "Declaratoria de Herederos" },
+      { "id": "631", "descripcion": "Escritura de Compra-Venta" },
+      { "id": "632", "descripcion": "Factura Comercial" },
+      { "id": "633", "descripcion": "Instrumento de Donación" },
+      { "id": "634", "descripcion": "Liquidación final por Despidos" },
+      { "id": "635", "descripcion": "Liquidaciones de Cobro de Expensas" },
+      { "id": "636", "descripcion": "Recibo de Pago" },
+      { "id": "637", "descripcion": "Sentencia de Cobro de Juicio" },
+      {
+        "id": "638",
+        "descripcion": "MODELO T - ANEXO CONVENIO ASOCIADOS AL PAQUETE DE PRODUCTO"
+      },
+      {
+        "id": "639",
+        "descripcion": "MODELO I - Anexo Convenio asociados al Paquete de Producto"
+      },
+      {
+        "id": "640",
+        "descripcion": "MODELO J - Anexo Convenio asociados al Paquete de Producto"
+      },
+      { "id": "641", "descripcion": "Sol Pmo$p/ops Exp/Imp P.FyJc/act.com" },
+      { "id": "642", "descripcion": "Hojas de Trabajo DDJJ" },
+      { "id": "643", "descripcion": "Cobro Loterías/Premios" },
+      { "id": "644", "descripcion": "Venta Bienes Muebles" },
+      { "id": "645", "descripcion": "Liquidación de Acciones/Bonos" },
+      {
+        "id": "646",
+        "descripcion": "Solicitud de Préstamos en Pesos para Empleados"
+      },
+      { "id": "647", "descripcion": "Evolución mensual de ventas" },
+      { "id": "648", "descripcion": "Opción de Compra unica" },
+      { "id": "649", "descripcion": "Contrato/Solicitud Tarjeta - Primera Compra" },
+      {
+        "id": "650",
+        "descripcion": "Contrato/Solicitud Tarjeta - Instrumentación OCA"
+      },
+      { "id": "651", "descripcion": "Remito de Transferencia - Primera Compra" },
+      { "id": "652", "descripcion": "TIPO DESCONOCIDO - 652" },
+      { "id": "653", "descripcion": "Documentación anexa Convenios Individuos" },
+      { "id": "654", "descripcion": "Otra Documentación Bastanteo" },
+      { "id": "655", "descripcion": "Poderes" },
+      { "id": "658", "descripcion": "TIPO DESCONOCIDO - 658" },
+      { "id": "800", "descripcion": "TIPO DESCONOCIDO" },
+      { "id": "900", "descripcion": "VALIDACION DE IDENTIDAD" },
+      { "id": "903", "descripcion": "UIF" },
+      { "id": "990", "descripcion": "CARPETA SIN DETALLE - ORIGEN UVM" },
+      { "id": "991", "descripcion": "CARPETA SIN DETALLE - ORIGEN CREDITOS" },
+      {
+        "id": "992",
+        "descripcion": "CARPETA SIN DETALLE - SIN CONTROL INSTRUMENTAL POR ALGORITMO"
+      },
+      { "id": "993", "descripcion": "Correo con autorización de Segmentos" },
+      {
+        "id": "994",
+        "descripcion": "CERTIFICADO FIRMADO POR EL COUNTRY C/ CUOTA MENSUAL PROMEDIO"
+      },
+      {
+        "id": "995",
+        "descripcion": "MODELO A - ANEXO CONVENIO ASOCIADOS AL PAQUETE DE PRODUCTO"
+      },
+      {
+        "id": "996",
+        "descripcion": "MODELO C - ANEXO CONVENIO ASOCIADOS AL PAQUETE DE PRODUCTO"
+      },
+      {
+        "id": "997",
+        "descripcion": "MODELO D - ANEXO CONVENIO ASOCIADOS AL PAQUETE DE PRODUCTO"
+      },
+      {
+        "id": "998",
+        "descripcion": "MODELO F - ANEXO CONVENIO ASOCIADOS AL PAQUETE DE PRODUCTO"
+      },
+      {
+        "id": "999",
+        "descripcion": "Convenios asociados a paquetes de productos    MODELO T"
+      },
+      { "id": "1000", "descripcion": "Cja de Ahorro" },
+      { "id": "1001", "descripcion": "Cta. Cte." },
+      { "id": "1002", "descripcion": "Cta. Simple" },
+      { "id": "1003", "descripcion": "Cta. Comitente" },
+      { "id": "1004", "descripcion": "Préstamos" },
+      { "id": "1005", "descripcion": "Texto ordenado" },
+      { "id": "1006", "descripcion": "Datos complementarios de los firmantes" },
+      { "id": "1007", "descripcion": "Post Venta" },
+      { "id": "1008", "descripcion": "Solicitud de Acuerdo" },
+      { "id": "1009", "descripcion": "Depósitos Remotos" },
+      { "id": "1010", "descripcion": "Form. de Adiconales de tarjetas" },
+      { "id": "1011", "descripcion": "Tarjeta de Crédito " },
+      { "id": "1012", "descripcion": "Plazo Fijo " },
+      { "id": "1013", "descripcion": "Carátula GD" },
+      { "id": "1014", "descripcion": "Solcitud Monedero" },
+      { "id": "1015", "descripcion": "FATCA- W9 Residente Tributario de los EE.UU" },
+      { "id": "1016", "descripcion": "Documentación Adicional" },
+      { "id": "1017", "descripcion": "Adhes. Interbanking" },
+      { "id": "1018", "descripcion": "Formulario Agropecuario" },
+      { "id": "1019", "descripcion": "FUS" },
+      { "id": "1020", "descripcion": "Cert. FATCA PJ" },
+      { "id": "1021", "descripcion": "Bibliorato CAH" },
+      { "id": "1022", "descripcion": "Registros de Firmas" },
+      { "id": "1023", "descripcion": "DDJJ Salud" },
+      { "id": "1024", "descripcion": "Licencia de Conducir" },
+      { "id": "1025", "descripcion": "Riego NET" },
+      { "id": "1026", "descripcion": "Pasaporte" },
+      { "id": "1027", "descripcion": "Multimarca" },
+      { "id": "1028", "descripcion": "Res. ATM" },
+      { "id": "1029", "descripcion": "LC" },
+      {
+        "id": "1030",
+        "descripcion": "F4461 - Vinculación Personas Físicas con Actividad Comercial "
+      },
+      { "id": "1031", "descripcion": "F4460 Vinculación Minorista Consumo" },
+      {
+        "id": "1032",
+        "descripcion": " F5141 Cargos y Comisiones Minorista Comercial"
+      },
+      {
+        "id": "1033",
+        "descripcion": "Formulario 5496 - Anexo a la Solicitud de Tarjeta de Crédito - Seguros"
+      },
+      {
+        "id": "1034",
+        "descripcion": "Formulario 5497 - Anexo a la Solicitud de Préstamo Personal - Seguros"
+      },
+      { "id": "1035", "descripcion": "Bibl. UAL" },
+      { "id": "1036", "descripcion": "Formulario F 5063-1 Alta de Comercio" },
+      {
+        "id": "1037",
+        "descripcion": "Formulario 5067-3 Formulario de Modificación Bancaria"
+      },
+      {
+        "id": "1038",
+        "descripcion": "Formulario F 5049-5 VIS 813 Anexo terminal de Captura LAPOS"
+      },
+      {
+        "id": "1039",
+        "descripcion": "Formulario F 4585-8 F 200 Alta o Modificaciones de Tarjeta"
+      },
+      {
+        "id": "1040",
+        "descripcion": "Formulario F 5044-0 Cambio de Entidad Pagadora"
+      },
+      { "id": "1041", "descripcion": "Formulario F4738-1 Membretado" },
+      {
+        "id": "1042",
+        "descripcion": "Formulario F 4740/7 Alta de Comercio y Establecimiento"
+      },
+      {
+        "id": "1043",
+        "descripcion": "Formulario F5235-1 Reglamento Alta Comercio y Establecimiento Tarjeta Presente"
+      },
+      {
+        "id": "1044",
+        "descripcion": "Formulario F4788-0 Alta Comercio y Establec Debito Automatico"
+      },
+      {
+        "id": "1045",
+        "descripcion": "Formulario F5249-5 Reglamento Alta Comercio y Establec Debito Automatico"
+      },
+      {
+        "id": "1046",
+        "descripcion": "Formulario F5384-0 Alta Establecimiento RURAL Venta Telefonica"
+      },
+      {
+        "id": "1047",
+        "descripcion": "Formulario F5382-8 Reglamento Alta Establec Rural para Venta Telefonica"
+      },
+      {
+        "id": "1048",
+        "descripcion": "Formulario F5057-3 Modificación de Cuenta Bancaria Comercio Amigo  (FO 084)"
+      },
+      {
+        "id": "1049",
+        "descripcion": "Formulario F 4984-8 VIS 900 Alta de Comercio y Multiahdesión Visa"
+      },
+      {
+        "id": "1050",
+        "descripcion": "Formulario F 5204-0 VIS 902 Anexo al formulario de Alta"
+      },
+      {
+        "id": "1051",
+        "descripcion": "Formulario F 5205-1 VIS 903 (DDJJ PEP) Anexo al formulario de Alta de establecimientos"
+      },
+      {
+        "id": "1052",
+        "descripcion": "Formulario F 5330-6 VIS 531 Plan de Cuotas y Servicios Adicionales"
+      },
+      { "id": "1053", "descripcion": "Formulario F 5415-1 Alta de Comercio Amigo " },
+      { "id": "1054", "descripcion": "CTA CTE y CBU" },
+      { "id": "1055", "descripcion": "IIBB" },
+      { "id": "1056", "descripcion": "Hab. comercio" },
+      { "id": "1057", "descripcion": "DDJJ dom comercio" },
+      { "id": "1058", "descripcion": "cont. loc. " },
+      { "id": "1059", "descripcion": "Escritura" },
+      { "id": "1060", "descripcion": "cont. social" },
+      { "id": "1061", "descripcion": "condiciones" },
+      { "id": "1062", "descripcion": "rubros especiales " },
+      { "id": "1063", "descripcion": "DDJJ Res. UIF" },
+      { "id": "1064", "descripcion": "Términos y Condiciones " },
+      { "id": "1065", "descripcion": "mejores prácticas" },
+      { "id": "1066", "descripcion": "PCI" },
+      { "id": "1067", "descripcion": "Esq Red" },
+      { "id": "1068", "descripcion": "PEX" },
+      {
+        "id": "1069",
+        "descripcion": " F. 4075/7 - \"Solicitud de Alta / Baja de relación Cliente / Cuenta\" ."
+      },
+      { "id": "1070", "descripcion": "DIRECTORIO" },
+      {
+        "id": "1071",
+        "descripcion": "F4464/1 CONTRATO DE TARJETAS DE CRÉDITO PERSONAS FÍSICAS CON ACTIVIDAD COMERCIAL"
+      },
+      {
+        "id": "1072",
+        "descripcion": "F 5172/8 - Solicitud de Préstamos Pesos para Exportación - Importación"
+      },
+      { "id": "1073", "descripcion": "Balance" },
+      { "id": "1074", "descripcion": "Carta Exención de Sellos" },
+      { "id": "1075", "descripcion": "F 3314/9 - Pagaré en Pesos ($)" },
+      { "id": "1076", "descripcion": "F 3557/5 - Pagaré en dólares (U$S)" },
+      { "id": "1077", "descripcion": "F 3981/3 - Solicitud de Crédito" },
+      { "id": "1078", "descripcion": "Formulario 1186" },
+      { "id": "1079", "descripcion": "DDJJ de Destino de Fondos (Comunic. 4453)" },
+      { "id": "1080", "descripcion": "F 4982/8 - Boleto de Compra" },
+      { "id": "1081", "descripcion": "Carta de Prórroga" },
+      { "id": "1082", "descripcion": "F 4592/5 - Boleto de Venta" },
+      { "id": "1083", "descripcion": "Carta de Reestructuración" },
+      {
+        "id": "1084",
+        "descripcion": "Copia de Acta de Directorio certificada por escribano y legalizada"
+      },
+      { "id": "1085", "descripcion": "Carta Fianza Firmada" },
+      { "id": "1086", "descripcion": "Aval Fogaba" },
+      { "id": "1087", "descripcion": "Carta de aceptación Fogaba" },
+      { "id": "1088", "descripcion": "DDJJ FOGABA" },
+      { "id": "1089", "descripcion": "Formulario Línea Crédito FOGABA" },
+      { "id": "1090", "descripcion": "Anexo IV para cobro de comisiones" },
+      {
+        "id": "1091",
+        "descripcion": "Anexo VI (firmado por el cliente y verificado por sucursal)"
+      },
+      { "id": "1092", "descripcion": "Anexo VII - Fianza a favor de Fogaba" },
+      {
+        "id": "1093",
+        "descripcion": "Anexo IX - Persona Jurídica Aceptación Convenio cumplimiento "
+      },
+      {
+        "id": "1094",
+        "descripcion": "Anexo VIII - Persona Física Aceptación Convenio cumplimiento"
+      },
+      { "id": "1095", "descripcion": "Aval SGR" },
+      { "id": "1096", "descripcion": "Mensaje SWIFT Stand by letter" },
+      { "id": "1097", "descripcion": "Contrato firmado de la TC" },
+      { "id": "1098", "descripcion": "Instrumento de Cesión" },
+      { "id": "1099", "descripcion": "Notificación de Escribano" },
+      { "id": "1100", "descripcion": "Contrato a Ceder" },
+      { "id": "1101", "descripcion": "Contrato de Obra a Ceder" },
+      { "id": "1102", "descripcion": "Certificado a Ceder" },
+      { "id": "1103", "descripcion": "Factura a Ceder" },
+      { "id": "1104", "descripcion": "Contrato Forward" },
+      { "id": "1105", "descripcion": "Carta Caución Firmada" },
+      { "id": "1106", "descripcion": "Carta Notificación" },
+      { "id": "1107", "descripcion": "Plazo Fijo Original" },
+      { "id": "1108", "descripcion": "Copia de Constitución de Plazo Fijo" },
+      { "id": "1109", "descripcion": "Nómina con Descripción de Billetes" },
+      { "id": "1110", "descripcion": "Nómina con Descripción de Pagarés" },
+      { "id": "1111", "descripcion": "Copia de Pagarés a Caucionar" },
+      { "id": "1112", "descripcion": "Nómina con Descripción de Cheques" },
+      { "id": "1113", "descripcion": "Copia de Cheques a Caucionar" },
+      { "id": "1114", "descripcion": "Warrant" },
+      { "id": "1115", "descripcion": "Certificado de depósito" },
+      { "id": "1116", "descripcion": "Talón" },
+      { "id": "1117", "descripcion": "DDJJ Medio Ambiente (Anexo XIII)" },
+      { "id": "1118", "descripcion": "DDJJ Nacionalidad de Bienes " },
+      { "id": "1119", "descripcion": "DDJJ Programa Global de Crédito" },
+      { "id": "1120", "descripcion": "Nota del cliente describiendo el proyecto " },
+      { "id": "1121", "descripcion": "Formulario de Riesgo ambiental" },
+      {
+        "id": "1122",
+        "descripcion": "Nota Firmada por Contador con Ventas (últimos 3 ejercicios)"
+      },
+      {
+        "id": "1123",
+        "descripcion": "Presupuesto con membrete y firma del proveedor"
+      },
+      { "id": "1124", "descripcion": "Últimos 3 balances" },
+      { "id": "1125", "descripcion": "Anexo a la Solicitud de Préstamo " },
+      { "id": "1126", "descripcion": "Anexo estadístico" },
+      { "id": "1127", "descripcion": "Anexo II - Acreditación de Fondos" },
+      {
+        "id": "1128",
+        "descripcion": "Anexo III - Nota de aplicación de Fondos adjudicados"
+      },
+      { "id": "1129", "descripcion": "Anexo V - Planilla B2" },
+      { "id": "1130", "descripcion": "Anexo V - Planilla A " },
+      { "id": "1131", "descripcion": "Anexo V - Planilla B " },
+      { "id": "1132", "descripcion": "DDJJ BID SAN JUAN" },
+      {
+        "id": "1133",
+        "descripcion": "Copia simple de los estados contables del último ejercicio o documentación análoga"
+      },
+      { "id": "1134", "descripcion": "Copia simple DDJJ F. 931 SUS" },
+      { "id": "1135", "descripcion": "Informe de utilización de Fondos" },
+      {
+        "id": "1136",
+        "descripcion": "Balance Consolidado Empresa Controlante (P/grupo económico)"
+      },
+      { "id": "1137", "descripcion": "Venta últimos 3 períodos" },
+      { "id": "1138", "descripcion": "Últimos 3 Balances Empresas Vinculadas " },
+      { "id": "1139", "descripcion": "Informe Utilización de los fondos" },
+      { "id": "1140", "descripcion": "Nota de Descripción del Proyecto" },
+      { "id": "1141", "descripcion": "Presupuestos" },
+      { "id": "1142", "descripcion": "Balance Consolidado Empresa Controlante" },
+      { "id": "1143", "descripcion": "Validación Línea BID" },
+      { "id": "1144", "descripcion": "Proyecto Aprobado por el Fontar" },
+      {
+        "id": "1145",
+        "descripcion": "Factura Pro-forma / Presupuesto y/o factura definitiva"
+      },
+      {
+        "id": "1146",
+        "descripcion": "Carta respaldo nacionalidad de los bienes (solo para bienes nacionales)"
+      },
+      { "id": "1147", "descripcion": "Copia de la Factura Definitiva" },
+      { "id": "1148", "descripcion": "Formulario Datos del Cliente" },
+      {
+        "id": "1149",
+        "descripcion": "Conforme por parte del área Comercial (Gte de Cuenta)"
+      },
+      { "id": "1150", "descripcion": "DDJJ Líneas especiales - Actividad" },
+      { "id": "1151", "descripcion": "Factura Pro-forma / Presupuesto" },
+      {
+        "id": "1152",
+        "descripcion": "Promedio de ventas, neto de iva, de los últimos 3 períodos"
+      },
+      {
+        "id": "1153",
+        "descripcion": "Anexo Solicitud Línea Proyecto PNUD N° 07/001"
+      },
+      { "id": "1154", "descripcion": "DDJJ San Juan - Proyecto PNUD N° 007/001" },
+      {
+        "id": "1155",
+        "descripcion": "Aviso facturación del cliente: hasta u$s 25 Mill o hasta u$s 60 Mill"
+      },
+      { "id": "1156", "descripcion": "Carta de aceptación de elegibilidad" },
+      { "id": "1157", "descripcion": "F 5166/2 - Carta Mandato" },
+      { "id": "1158", "descripcion": "Form. Descripción del Proyecto" },
+      {
+        "id": "1159",
+        "descripcion": "F 5167/3 - DDJJ de cumplimiento de condiciones y destino de fondos"
+      },
+      { "id": "1160", "descripcion": "Nota Desembolso" },
+      { "id": "1161", "descripcion": "DDJJ de ganado reproductor" },
+      {
+        "id": "1162",
+        "descripcion": "Factura Original y Definitiva firmada por Proveedor"
+      },
+      { "id": "1163", "descripcion": "Contrato Sindicado" },
+      { "id": "1164", "descripcion": "Anexo Contrato" },
+      { "id": "1165", "descripcion": "Presentación de antecedentes" },
+      {
+        "id": "1166",
+        "descripcion": "F 3923/6 - Solicitud de Préstamo en moneda extranjera"
+      },
+      {
+        "id": "1167",
+        "descripcion": "Copia Factura Original y Definitiva firmada por Proveedor"
+      },
+      { "id": "1168", "descripcion": "Datos estadísticos para la Sepyme" },
+      { "id": "1169", "descripcion": "Anexo Clanae" },
+      {
+        "id": "1170",
+        "descripcion": "DDJJ Líneas especiales - facturación y actividad"
+      },
+      { "id": "1171", "descripcion": "DDJJ Nacionalidad de los bienes" },
+      {
+        "id": "1172",
+        "descripcion": "Certificado de inclusión en Programa de Emergencia Agropecuaria"
+      },
+      { "id": "1173", "descripcion": "Aceptación del Seguro de Vida" },
+      { "id": "1174", "descripcion": "Caida de Cuotas" },
+      {
+        "id": "1175",
+        "descripcion": "Solicitud Única de Apertura de Cuenta para Personas Jurídicas (F.4440)"
+      },
+      { "id": "1176", "descripcion": "Comisiones y Reglamentos" },
+      {
+        "id": "1177",
+        "descripcion": "Información complementaria para el segmento Agro Pes (F.5175/1) "
+      },
+      { "id": "1178", "descripcion": "Manifestación de Responsabilidad (F.1650/5)" },
+      {
+        "id": "1179",
+        "descripcion": "DDJJ Apertura de Cta. De Personas Físicas destinadas a ayuda comunitaria (F.4952/8)"
+      },
+      {
+        "id": "1180",
+        "descripcion": "DDJJ Origen y Licitud Fondos Personas Jurídicas (F.5398/4)"
+      },
+      { "id": "1186", "descripcion": "Constancia de Inscripción UIF" },
+      { "id": "1187", "descripcion": "Formulario de sujeto obligado F.5053/1" },
+      { "id": "1188", "descripcion": "Informe de Apertura (F.5201/7)" },
+      {
+        "id": "1189",
+        "descripcion": "Certificado de Inscripción del Registro Industrial de la Nación (RIN)"
+      },
+      {
+        "id": "1190",
+        "descripcion": "DDJJ Deudas en Sistema Financiero (F.4185/0)"
+      },
+      { "id": "1191", "descripcion": "Acta de Asamblea de cierre de ejercicio" },
+      {
+        "id": "1192",
+        "descripcion": "Detalle de obras en ejecución y grado de avance"
+      },
+      { "id": "1193", "descripcion": "Factura Proforma" },
+      { "id": "1194", "descripcion": "Flujo de Fondos" },
+      {
+        "id": "1195",
+        "descripcion": "DDJJ Com. \"A\" 2573 del BCRA - Anexo II (F.4351/9)"
+      },
+      {
+        "id": "1196",
+        "descripcion": "Formuario Riesgo Ambiental Principios de Ecuador (F.4683/5)"
+      },
+      {
+        "id": "1197",
+        "descripcion": "Formulario Riesgo Ambiental Préstamo Menor a 100 MM (F.4873/5)"
+      },
+      { "id": "1198", "descripcion": "Informe de Evaluación inicial Ambiental" },
+      { "id": "1199", "descripcion": "Informe Comercial (F.4338)" },
+      {
+        "id": "1200",
+        "descripcion": "Solicitud Única de Productos para Personas Físicas con actividad Comercial (F.4439)"
+      },
+      { "id": "1201", "descripcion": "Base de antecedentes IS20 " },
+      { "id": "1202", "descripcion": "Solicitud de Productos y Servicios Paquetes" },
+      { "id": "1203", "descripcion": "Galicia Seguros" },
+      { "id": "1204", "descripcion": "Legajo Histórico Empresas" },
+      { "id": "1205", "descripcion": "F4461-4 Vinculacion PF con AC" },
+      {
+        "id": "1206",
+        "descripcion": "Nota modelo para personas jurídicas objeto amplio"
+      },
+      {
+        "id": "1207",
+        "descripcion": "Convenio de Divorcio / Acuerdos matrimoniales"
+      },
+      { "id": "1208", "descripcion": "Contrato de Cesión" },
+      { "id": "1209", "descripcion": "DDJJ Sinceramiento" },
+      { "id": "1210", "descripcion": "Pantalla IS20" },
+      { "id": "1211", "descripcion": "resumen bancario de cuenta del exterior" },
+      { "id": "1212", "descripcion": "VEP" },
+      {
+        "id": "1213",
+        "descripcion": "DDJJ Compromiso por entrega de Documentación - Sinceramiento"
+      },
+      {
+        "id": "1214",
+        "descripcion": "Solicitud de Productos Cuentas Especiales Ley 27260 - Sinceramiento Fiscal"
+      },
+      {
+        "id": "1215",
+        "descripcion": "Instrucción de Operación - Sinceramiento Fiscal"
+      },
+      {
+        "id": "1216",
+        "descripcion": "DDJJ de Instrucción de transferencia para la adquisición de inmuebles o bienes registrables"
+      },
+      { "id": "1217", "descripcion": "Comprobantes de transferencia realizada" },
+      {
+        "id": "1218",
+        "descripcion": "Instrucción de adquisición de FCI - Sinceramiento Fiscal"
+      },
+      { "id": "1219", "descripcion": "Comprobante AFIP" },
+      { "id": "1220", "descripcion": "Solicitud Histórica de Apertura Empresas" },
+      { "id": "1221", "descripcion": "Acta de recepción (2 copias)" },
+      {
+        "id": "1222",
+        "descripcion": "Copia del: RIN, ONCCA, RENSPA, IERIC, AFIP como productor activo (según corresponda)"
+      },
+      {
+        "id": "1223",
+        "descripcion": "DDJJ Impositiva del Proveedor (en caso de operar por 1ra vez)"
+      },
+      { "id": "1224", "descripcion": "Contrato de Leasing (2 copias)" },
+      {
+        "id": "1225",
+        "descripcion": "Carta informativa para confección de contratos"
+      },
+      { "id": "1226", "descripcion": "Formulario 01" },
+      { "id": "1227", "descripcion": "Formulario 12" },
+      {
+        "id": "1228",
+        "descripcion": "Certificado de fabricación, importación o similar"
+      },
+      { "id": "1229", "descripcion": "Formulario 24" },
+      { "id": "1230", "descripcion": "Nómina para carta autorización manejo" },
+      { "id": "1231", "descripcion": "Anexo Línea Productiva Contrato de Leasing" },
+      { "id": "1232", "descripcion": "F 4981/7 - Boleto de Compra" },
+      { "id": "1233", "descripcion": "DDJJ (Comunic. 6080)" },
+      { "id": "1234", "descripcion": "Formulario 5565" },
+      { "id": "1235", "descripcion": "IATA Cons Inscr" },
+      { "id": "1236", "descripcion": "CNRT Const. Inscr." },
+      { "id": "1237", "descripcion": "Copia seguro de Caución" },
+      { "id": "1238", "descripcion": "Secr de Turismo Cert de Idoneidad" },
+      { "id": "1239", "descripcion": "Inscripción en la SSN" },
+      {
+        "id": "1240",
+        "descripcion": "Copia de Licencia expedida por el ente regulador"
+      },
+      { "id": "1241", "descripcion": "5466/2 Formulario de Seguros UVM" },
+      { "id": "1242", "descripcion": "Copia de contrato de consesion" },
+      {
+        "id": "1243",
+        "descripcion": "Certificado Policial de domicilio de los titulares / apoderados"
+      },
+      { "id": "1244", "descripcion": "Autonomos" },
+      { "id": "1245", "descripcion": "Monotributo" },
+      {
+        "id": "1246",
+        "descripcion": "Formulario F.4743/6 \"establecimiento con beneficio de pago diferente al titular"
+      },
+      {
+        "id": "1247",
+        "descripcion": "Formulario F.4864/6 F 203 Anexo Operatoria Mayorista"
+      },
+      {
+        "id": "1248",
+        "descripcion": "Formulario F.5171--Carta Mayorista -Minorista"
+      },
+      { "id": "1249", "descripcion": "Libros Societarios / Contables" },
+      { "id": "1250", "descripcion": "documento TOM sin control" },
+      { "id": "1251", "descripcion": "Cont. Marco" },
+      { "id": "1252", "descripcion": "DDJJ PEP" },
+      { "id": "1253", "descripcion": "Tarjeta Debito Adicional" },
+      { "id": "1254", "descripcion": "Recibo de Nomina" },
+      { "id": "1255", "descripcion": "Estado Civil" },
+      { "id": "1256", "descripcion": "Historial Académico" },
+      { "id": "1257", "descripcion": "DNI" },
+      { "id": "1258", "descripcion": "CUIL" },
+      { "id": "1259", "descripcion": "titulo terciario" },
+      { "id": "1260", "descripcion": "OFERTA" },
+      { "id": "1261", "descripcion": "SEGURO DE VIDA" },
+      { "id": "1262", "descripcion": "FORMULARIO DE INGRESO" },
+      { "id": "1263", "descripcion": "ALTA TEMPRANA" },
+      { "id": "1264", "descripcion": "DNI CONYUGUE" },
+      { "id": "1265", "descripcion": "DNI HIJOS" },
+      { "id": "1266", "descripcion": "CUIL CONYUGUE" },
+      { "id": "1267", "descripcion": "CERT MATRIMONIO" },
+      { "id": "1269", "descripcion": "PARTIDA DE NACIMINETO" },
+      { "id": "1270", "descripcion": "CV" },
+      { "id": "1271", "descripcion": "TU" },
+      { "id": "1272", "descripcion": "ANALITICO" },
+      { "id": "1273", "descripcion": "TITULO SECUNDARIO" },
+      { "id": "1275", "descripcion": "OBRA SOCIAL" },
+      { "id": "1276", "descripcion": "CDE" },
+      { "id": "1277", "descripcion": "FEP" },
+      { "id": "1278", "descripcion": "CERTIFICADO DE EMBARAZO" },
+      { "id": "1279", "descripcion": "CARTA DE EXCEDENCIA" },
+      { "id": "1280", "descripcion": "Confirmación de personal" },
+      { "id": "1281", "descripcion": "Carta cambio prepaga" },
+      { "id": "1282", "descripcion": "Seguro de Vida  colectivo" },
+      { "id": "1283", "descripcion": "Telegrama" },
+      { "id": "1284", "descripcion": "Formulario de Maternidad" },
+      { "id": "1285", "descripcion": "Contrato de Cesion de persona" },
+      { "id": "1286", "descripcion": "Relaciones laborales" },
+      { "id": "1287", "descripcion": "Acuerdo de democión" },
+      { "id": "1288", "descripcion": "Certificado médico" },
+      { "id": "1289", "descripcion": "Contrato de plazo fijo/temporal" },
+      { "id": "1290", "descripcion": "Prenatal" },
+      { "id": "1291", "descripcion": "Carta documento" },
+      { "id": "1292", "descripcion": "Carta de cambio de funciones" },
+      { "id": "1293", "descripcion": "Plan de mejora" },
+      { "id": "1294", "descripcion": "LH" },
+      { "id": "1295", "descripcion": "Solicitud de adhesion comercio amigo" },
+      { "id": "1296", "descripcion": "Formulario acreditación PEP PF" },
+      { "id": "1297", "descripcion": "Formulario acreditación PEP PJ" },
+      { "id": "1298", "descripcion": "Ley 17250" },
+      { "id": "1299", "descripcion": "DDJJ 51930" },
+      { "id": "1300", "descripcion": "Nota Enmienda apertura" },
+      { "id": "1301", "descripcion": "Informe Calificadoras" },
+      { "id": "1302", "descripcion": "Legajo digital MOVE" },
+      { "id": "1303", "descripcion": "Carátula MOVE" },
+      {
+        "id": "1304",
+        "descripcion": "F. 5518 - Solicitud de Créditos Hipotecarios UVA"
+      },
+      { "id": "1305", "descripcion": "F. 4623 - Carta Compromiso" },
+      { "id": "1306", "descripcion": "F. 4621 - Computo y presupuesto" },
+      { "id": "1307", "descripcion": "Pago de Autónomos" },
+      { "id": "1308", "descripcion": "Inscripción en Monotributo" },
+      { "id": "1309", "descripcion": "Credencial de pago F152" },
+      { "id": "1310", "descripcion": "Ingresos del Cónyuge/Concubino" },
+      { "id": "1311", "descripcion": "Fotocopia del título de propiedad" },
+      {
+        "id": "1312",
+        "descripcion": "Fotocopia del Reglamento de Copropiedad inscripto"
+      },
+      { "id": "1313", "descripcion": "Ficha I - Mail seleccionado Procrear" },
+      { "id": "1314", "descripcion": "Ficha II - Declaración Jurada Procrear" },
+      { "id": "1315", "descripcion": "Ficha III - Nota Recibo Procrear" },
+      { "id": "1316", "descripcion": "F. 5572 - DDJJ Presentación Voluntaria" },
+      { "id": "1317", "descripcion": "Informe Filtrar" },
+      { "id": "1318", "descripcion": "Impresión Evaluador" },
+      { "id": "1319", "descripcion": "Carta Oferta" },
+      { "id": "1320", "descripcion": "adenda" },
+      { "id": "1321", "descripcion": "adenda" },
+      { "id": "1322", "descripcion": "Carta Rescisión Anticipada" },
+      { "id": "1323", "descripcion": "Preacu Pre Hipo" },
+      { "id": "1324", "descripcion": "Formulario PRI-100" },
+      { "id": "1326", "descripcion": "Instr. transferencia" },
+      {
+        "id": "1327",
+        "descripcion": "Solicitud de apertura producto (Greco Partner) "
+      },
+      { "id": "1328", "descripcion": "Encuesta de Perfil de Riesgo del Inversor" },
+      { "id": "1329", "descripcion": "Solicitud de Apertura de Cuenta Comitente" },
+      { "id": "1330", "descripcion": "Regl. Gestion" },
+      {
+        "id": "1331",
+        "descripcion": "DDJJ Persona Jurídica informe porcentaje de accionistas "
+      },
+      { "id": "1332", "descripcion": "PEP de c/u de los firmantes de la prenda " },
+      { "id": "1333", "descripcion": "Formulario 02" },
+      {
+        "id": "1334",
+        "descripcion": "Titulo de propiedad de automotor/maquinaria (usado)"
+      },
+      {
+        "id": "1335",
+        "descripcion": "DDJJ de Personas jurídicas y apoderado representante legal "
+      },
+      { "id": "1336", "descripcion": "Boleto de marca (GANADO)" },
+      { "id": "1337", "descripcion": "Copia de GUARDA HABITUAL" },
+      {
+        "id": "1338",
+        "descripcion": "Certificación Contable de Ingresos (último periodo) "
+      },
+      { "id": "1339", "descripcion": "F5498 - Para Sociedades de Hecho " },
+      { "id": "1340", "descripcion": "Copia de un Servicio " },
+      { "id": "1341", "descripcion": "Anexo a la PEP" },
+      {
+        "id": "1342",
+        "descripcion": "Fotocopia del RUTA - certificado por escribano "
+      },
+      { "id": "1343", "descripcion": "Copia de Balance - certificado por CPCE " },
+      { "id": "1344", "descripcion": "Formulario 03" },
+      { "id": "1345", "descripcion": "Boleto de compra de dólares" },
+      { "id": "1346", "descripcion": "Copia del RENSPA" },
+      { "id": "1347", "descripcion": "Anexo línea productiva Contrato de Prenda" },
+      { "id": "1348", "descripcion": "Certificacion del empleador" },
+      { "id": "1349", "descripcion": "Recibo de aguinaldo - ingresos" },
+      { "id": "1350", "descripcion": "Recibo de premio - ingresos" },
+      { "id": "1351", "descripcion": "Bs Personales - DDJJ " },
+      { "id": "1352", "descripcion": "Bs Personales - DDJJ (Acuse de Recibo)" },
+      { "id": "1353", "descripcion": "Ingresos - Papeles de trabajo del contador" },
+      { "id": "1354", "descripcion": "Libre deuda" },
+      {
+        "id": "1355",
+        "descripcion": "Nota del contador con la apertura del rubro ingresos exentos"
+      },
+      { "id": "1356", "descripcion": "Impuesto municipal nueva propiedad" },
+      { "id": "1357", "descripcion": "Minuta Escribano " },
+      { "id": "1358", "descripcion": "Foto al solicitante" },
+      { "id": "1359", "descripcion": "Foto al DNI (Frente y Dorso)" },
+      {
+        "id": "1360",
+        "descripcion": "Nota de presentación voluntaria de DDJJ impositivas"
+      },
+      { "id": "1361", "descripcion": "Censo Nacional Agropecuario" },
+      { "id": "1362", "descripcion": "LETRA HIPOTECARIA" },
+      { "id": "1363", "descripcion": "PROCREAR" },
+      { "id": "1364", "descripcion": "Carta ANSES" },
+      { "id": "1365", "descripcion": "Transferencia de titulos" },
+      { "id": "1366", "descripcion": "Compra-Venta de titulos" },
+      { "id": "1367", "descripcion": "Desembolso de Fideicomisos" },
+      { "id": "1368", "descripcion": "Carta de ADRs" },
+      { "id": "1369", "descripcion": "Transferencia monetaria por compensaciones" },
+      { "id": "1370", "descripcion": "Movimiento cuentas monetarias" },
+      { "id": "1371", "descripcion": "Orden de compra por licitaciones primarias" },
+      { "id": "1372", "descripcion": "Cambios" },
+      { "id": "1373", "descripcion": "Notas operaciones de licitaciones primarias" },
+      { "id": "1374", "descripcion": "Carta de aceptacion de forward" },
+      { "id": "1375", "descripcion": "FIMA" },
+      { "id": "1376", "descripcion": "Instrucciones permanentes" },
+      { "id": "1377", "descripcion": "Otros BOI" },
+      { "id": "1378", "descripcion": "Foto de persona (Selfie)" },
+      { "id": "1379", "descripcion": "Tasacion" },
+      { "id": "1380", "descripcion": "foto del dorso del dni" },
+      { "id": "1381", "descripcion": "Reserva/Boleto CV" },
+      { "id": "1382", "descripcion": "SMS token comprobante" },
+      { "id": "1383", "descripcion": "perfil" },
+      { "id": "1384", "descripcion": "gastos" },
+      { "id": "1385", "descripcion": "ingresos" },
+      { "id": "1386", "descripcion": "otros" },
+      { "id": "1388", "descripcion": "New Account Application (Resumen)" },
+      { "id": "1389", "descripcion": "Nota de presentación voluntaria DDJJ" },
+      { "id": "1390", "descripcion": "Formulario Comisiones Off Shore" },
+      {
+        "id": "1391",
+        "descripcion": "Formulario EDL (Election of Electronic Delivery)"
+      },
+      { "id": "1392", "descripcion": "Contrato del cleiente BGBA" },
+      { "id": "1393", "descripcion": "Formulario W8BEN-E" },
+      { "id": "1394", "descripcion": "Formulario 312 (Non-US Resident)" },
+      { "id": "1395", "descripcion": "DDJJ perfil transaccional" },
+      { "id": "1399", "descripcion": "Contrato del Cliente con INTL" },
+      { "id": "1400", "descripcion": "ficha del cliente" },
+      { "id": "1401", "descripcion": "autorizacion envio de informacion por mail " },
+      { "id": "1402", "descripcion": "Formulario W8BEN" },
+      { "id": "1403", "descripcion": "F. 5660-4 DDJJ Inversor calificado" },
+      { "id": "1404", "descripcion": "F. 4532-3: Licitud y origen de Fondos" },
+      { "id": "1405", "descripcion": "Mail" },
+      { "id": "1406", "descripcion": "Informe Comercial - Revisión Manual" },
+      { "id": "1407", "descripcion": "PF Titulo " },
+      { "id": "1408", "descripcion": "Transf" },
+      { "id": "1409", "descripcion": "DDJJ Grandes Exportadores (A 6765 BCRA)" },
+      { "id": "1410", "descripcion": "Convenio de Haberes" },
+      { "id": "1411", "descripcion": "Infracciones" },
+      { "id": "1412", "descripcion": "Selfie con DU" },
+      { "id": "1413", "descripcion": "Solicitud de Préstamo Personal" },
+      { "id": "1414", "descripcion": "Carta Oferta y Aceptacion F570.6" },
+      { "id": "1415", "descripcion": "DDJJ Estado Civil F570.6" },
+      { "id": "1416", "descripcion": "Info Créditos" }
+    ]
+  }
+]

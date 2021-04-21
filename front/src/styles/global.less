@@ -1,0 +1,37 @@
+/* global */
+
+@import '~src/styles/antd/antd.less';
+
+input:-webkit-autofill {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 10;
+}
+
+.sticky {
+  position: sticky;
+  z-index: 10;
+  top: 0; /* required */
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.shadow {
+  box-shadow: 0px 3px 11px 3px @shadow-color;
+}

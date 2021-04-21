@@ -1,0 +1,34 @@
+[
+  {
+    "label": "Tipo de Pedido",
+    "type": "list",
+    "wsField": "tipoPedido",
+    "listValues": [
+      { "id": "0", "descripcion": "Lista Original" },
+      { "id": "1", "descripcion": "Imagen" }
+    ]
+  },
+  { "label": "Fecha generación", "type": "date", "wsField": "fechaGeneracion" },
+  { "label": "Número de pedido", "type": "number", "wsField": "id" },
+  {
+    "label": "Observaciones",
+    "type": "text",
+    "wsField": "observaciones",
+    "listCompare": [{ "id": "contiene", "descripcion": "contiene" }]
+  },
+  {
+    "label": "Suc/CC Destino",
+    "type": "list-search",
+    "wsField": "idSectorDestino"
+  },
+  {
+    "label": "Estado",
+    "type": "list",
+    "wsField": "estado"
+  },
+  {
+    "label": "Usuario de alta",
+    "type": "text",
+    "wsField": "legajoAlta"
+  }
+]

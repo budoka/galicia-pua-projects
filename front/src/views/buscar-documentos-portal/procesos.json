@@ -1,0 +1,113 @@
+﻿[
+    {"label": "Gestión Documental", "type": "list-search", "wsField": "0",
+        "listValues": [
+          {"id": "0", "descripcion": "Gestión Documental"}
+        ]
+      },
+      {"label": "PROCRED", "type": "list-search", "wsField": "1",
+        "listValues": [
+          {"id": "1", "descripcion": "Prestamos Sola Firma"},
+          {"id": "2", "descripcion": "Prestamos Comex en pesos"},
+          {"id": "3", "descripcion": "Prendarios"},
+          {"id": "4", "descripcion": "Financiero Unificado"}
+        ]
+      },
+      {"label": "UAL", "type": "list-search", "wsField": "2",
+        "listValues": [
+          {"id": "1", "descripcion": "Operativo UIF - 2da Etapa"},
+          {"id": "2", "descripcion": "Perfil Transaccional de Cliente"}
+        ]
+      },
+      {"label": "Originacion Mayorista", "type": "list-search", "wsField": "5",
+        "listValues": [
+          {"id": "1", "descripcion": "Contratos y Poderes - Primer Ingreso"},
+          {"id": "2", "descripcion": "Balance SAAR"},
+          {"id": "3", "descripcion": "Contratos y Poderes - Novedades"},
+          {"id": "4", "descripcion": "Balances SOAM"},
+          {"id": "5", "descripcion": "Formulario Agropecuario (ex 825)"},
+          {"id": "6", "descripcion": "Envio Documentacion"},
+          {"id": "7", "descripcion": "Estatutos"},
+          {"id": "8", "descripcion": "Alta Convenios"},
+          {"id": "9", "descripcion": "Auditoria"}
+        ]
+      },
+      {"label": "Gestor", "type": "list-search", "wsField": "6",
+        "listValues": [
+          {"id": "1", "descripcion": "TOM"},
+          {"id": "2", "descripcion": "MOVE"}
+        ]
+      },
+      {"label": "SIODigitalizacion", "type": "list-search", "wsField": "7",
+        "listValues": [
+          {"id": "1", "descripcion": "Apertura"},
+          {"id": "2", "descripcion": "Calificacion"},
+          {"id": "3", "descripcion": "Apertura y Calificacion"},
+          {"id": "4", "descripcion": "Calificacion Extraordinaria"},
+          {"id": "6", "descripcion": "Calificacion SIC"}
+        ]
+      },
+      {"label": "Originacion Minorista", "type": "list-search", "wsField": "8",
+        "listValues": [
+          {"id": "1", "descripcion": "Comercio"},
+          {"id": "2", "descripcion": "Administradora"}
+        ]
+      },
+      {"label": "GRECO", "type": "list-search", "wsField": "9",
+        "listValues": [
+          {"id": "0", "descripcion": "Multimarca"}
+        ]
+      },
+      {"label": "Banca Financiera", "type": "list-search", "wsField": "10",
+        "listValues": [
+          {"id": "1", "descripcion": "Carpeta digital"}
+          
+        ]
+      },
+      {"label": "Originacion", "type": "list-search", "wsField": "11",
+        "listValues": [
+          {"id": "1", "descripcion": "Empresa SAS"},
+          {"id": "2", "descripcion": "Prestamos Hipotecarios"},
+          {"id": "3", "descripcion": "Venta Digital Paquetes"},
+          {"id": "4", "descripcion": "Prestamos Personales"},
+          {"id": "5", "descripcion": "Prestamos Financieros"}
+        ]
+      },
+      {"label": "Mercado de Capitales", "type": "list-search", "wsField": "13",
+        "listValues": [
+          {"id": "1", "descripcion": "Perfil Inversor"}
+        ]
+      },
+      {"label": "Mayorista_Vinculacion", "type": "list-search", "wsField": "14",
+        "listValues": [
+          {"id": "1", "descripcion": "JourneyEmpresas"}
+        ]
+      },
+      {"label": "Empresas", "type": "list-search", "wsField": "15",
+        "listValues": [
+          {"id": "1", "descripcion": "Estatutos"}
+        ]
+      },
+      {"label": "Legajo Digital", "type": "list-search", "wsField": "16",
+        "listValues": [
+          {"id": "1", "descripcion": "Legajo digital"},
+          {"id": "2", "descripcion": "leasing"},
+          {"id": "3", "descripcion": "Recupero Legajos Fisicos"}
+        ]
+      },
+      {"label": "Esquemas contables", "type": "list-search", "wsField": "17",
+        "listValues": [
+          {"id": "1", "descripcion": "Esquemas contables"}
+        ]
+      },
+      {"label": "WCEIF", "type": "list-search", "wsField": "18",
+        "listValues": [
+          {"id": "1", "descripcion": "WCEIF"}
+        ]
+      },
+      {"label": "Normativas Gestion Regulatoria", "type": "list-search", "wsField": "19",
+        "listValues": [
+          {"id": "1", "descripcion": "Normativas Gestion Regulatoria"}
+          
+        ]
+      }
+    ]

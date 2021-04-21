@@ -1,0 +1,176 @@
+/* table */
+
+@import (reference) '~src/styles/global.less';
+
+.header,
+.footer {
+  width: 100%;
+  background-color: @table-bg;
+}
+
+.tableWrapper {
+  width: 100%;
+  height: 50%;
+  background-color: @table-bg;
+  border-radius: 2px;
+
+  :global(.ant-table) {
+    border-radius: 2px !important;
+    div:nth-child(1) {
+      border-radius: 2px;
+    }
+  }
+
+  :global .ant-spin:global.ant-spin-spinning {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-height: 90% !important;
+
+    :global .ant-spin-text {
+      padding-top: 5px !important;
+    }
+  }
+
+  th {
+    :global(.ant-badge-count) {
+      background-color: @primary-color !important;
+    }
+  }
+
+  /* Fix sort enabled */
+  th:global.ant-table-column-has-sorters {
+    padding: 0px !important;
+  }
+
+  th,
+  div:global(.ant-table-column-sorters) {
+    padding: 8px 16px !important;
+  }
+
+  :global .ant-table-container::before {
+    width: 0 !important;
+    // transition: width 0.3s ease, box-shadow 0.3s ease !important;
+  }
+
+  :global .ant-table-ping-left {
+    :global .ant-table-container::before {
+      width: 30px !important;
+    }
+  }
+
+  .extraComponent {
+    display: flex;
+    padding: 2px 4px;
+
+    > * {
+      margin: 0 !important; // En prueba
+    }
+  }
+
+  .tableExtraComponents {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    text-align: center;
+    align-self: center;
+    color: @primary-color;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  :global .ant-table-cell {
+    height: 50px !important;
+    padding: 8px 16px !important; // fix selection column
+  }
+
+  /*   :global .ant-table-celln:not(:global .ant-table-column-has-sorters) {
+    :global .ant-table-column-sorters,
+    & {
+      height: 40px !important;
+    }
+  } */
+
+  :global(.ant-table-title),
+  :global(.ant-table-footer) {
+    display: flex;
+    width: 100%;
+    background-color: @table-bg;
+
+    button:not(:global .ant-btn-icon-only) {
+      width: 90px;
+    }
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* button {
+    height: auto !important;
+  }*/
+}
+
+:global .ant-table-body {
+  :global .ant-table-placeholder {
+    height: -moz-available;
+    height: -webkit-fill-available;
+  }
+}
+
+.line() {
+  &:not([disabled]):hover::after,
+  &:not([disabled]):focus::after {
+    width: 100%;
+    left: 0;
+    background-color: @primary-color;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width 0.5s ease, background-color 0.5s ease, left 0.5s ease;
+  }
+}
+
+.buttonEdit,
+.buttonSave,
+.buttonCancel {
+  padding: 0 !important;
+  display: flex !important;
+
+  span {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100%;
+    position: relative;
+  }
+
+  .line();
+}
+
+.buttonDelete {
+  padding: 0 !important;
+  display: flex !important;
+
+  span {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100%;
+    position: relative;
+
+    .line();
+  }
+}
